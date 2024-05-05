@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components{
+    /* .box{
+        @apply items-center border-2 border-grey-300 text-center rounded-sm p-6 space-y-3;
+    } */
+    .sold{
+       @apply text-red-600 rounded-3xl p-3 bg-purple-100 hover:text-white; 
+    }
+    .price{
+        @apply text-lg font-medium text-gray-950;
+    }
+    p{
+        @apply text-brand-gray
+    }
+
+    .line{
+        @apply line-through
+    }
+    .logo{
+        @apply hover:animate-pulse
+    }
+    .title{
+        @apply hover:ps-5
+    }
+    .brand-link {
+        @apply text-brand-yellow
+         font-medium text-xl lg:text-2xl  transition-all ease-in-out;
+        
+      &:hover{
+        @apply text-brand-gaming;
+      }
+
+         }
+         input{
+            @apply border border-brand-gray;
+         }
+        
+        /* &:hover{
+        @apply text-brand-blue  border-2 border-brand-gray rounded-2xl;
+    }  */
+}
+.btn{
+    @apply border border-gray-400 px-2 py-4 rounded-xl w-auto xl:w-full shadow-md;
+
+    &:hover{
+        @apply bg-brand-gray text-brand-yellow;
+    }
+}
+
+
+   
+
